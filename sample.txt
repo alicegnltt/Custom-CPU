@@ -1,0 +1,9 @@
+.data
+    test: .quad 5
+
+.text
+    ldr x0, [x1, 0]
+    add x0, x0, 10
+    mov x3, 8
+    sub x0, x0, x3
+    str x0, [x1, 0]
